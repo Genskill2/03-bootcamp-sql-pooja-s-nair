@@ -7,14 +7,14 @@ insert into publisher(name,country) values("Vintage","UK");
 
 
 
-insert into books(title,publisher_id) values("The C Programming Language",1);
-insert into books(title,publisher_id) values("The Go Programming Language",1);
-insert into books(title,publisher_id) values("The UNIX Programming Language",1);
-insert into books(title,publisher_id) values("Cryptonomicon",2);
-insert into books(title,publisher_id) values("Deep Work",3);
-insert into books(title,publisher_id) values("Atomic Habits",4);
-insert into books(title,publisher_id) values("The City and The City",5);
-insert into books(title,publisher_id) values("The Great War for Civilisation",6);
+insert into books(title,id) values("The C Programming Language",1);
+insert into books(title,id) values("The Go Programming Language",1);
+insert into books(title,id) values("The UNIX Programming Language",1);
+insert into books(title,id) values("Cryptonomicon",2);
+insert into books(title,id) values("Deep Work",3);
+insert into books(title,id) values("Atomic Habits",4);
+insert into books(title,id) values("The City and The City",5);
+insert into books(title,id) values("The Great War for Civilisation",6);
 
 insert into subjects(name) values("C");
 insert into subjects(name) values("UNIX");
@@ -27,22 +27,22 @@ insert into subjects(name) values("Politics");
 insert into subjects(name) values("History");
 
 
-insert into books_subjects(book_id,subjects_id) values(1,1);
-insert into books_subjects(book_id,subjects_id) values(1,2);
-insert into books_subjects(book_id,subjects_id) values(1,3);
-insert into books_subjects(book_id,subjects_id) values(2,4);
-insert into books_subjects(book_id,subjects_id) values(2,3);
-insert into books_subjects(book_id,subjects_id) values(3,2);
-insert into books_subjects(book_id,subjects_id) values(3,3);
-insert into books_subjects(book_id,subjects_id) values(4,3);
-insert into books_subjects(book_id,subjects_id) values(4,5);
-insert into books_subjects(book_id,subjects_id) values(5,3);
-insert into books_subjects(book_id,subjects_id) values(5,6);
-insert into books_subjects(book_id,subjects_id) values(6,6);
-insert into books_subjects(book_id,subjects_id) values(6,7);
-insert into books_subjects(book_id,subjects_id) values(7,5);
-insert into books_subjects(book_id,subjects_id) values(7,8);
-insert into books_subjects(book_id,subjects_id) values(8,8);
-insert into books_subjects(book_id,subjects_id) values(8,9);
+insert into books_subjects(book,subject) values(1,1);
+insert into books_subjects(book,subject) values(1,2);
+insert into books_subjects(book,subject) values(1,3);
+insert into books_subjects(book,subject) values(2,4);
+insert into books_subjects(book,subject) values(2,3);
+insert into books_subjects(book,subject) values(3,2);
+insert into books_subjects(book,subject) values(3,3);
+insert into books_subjects(book,subject) values(4,3);
+insert into books_subjects(book,subject) values(4,5);
+insert into books_subjects(book,subject) values(5,3);
+insert into books_subjects(book,subject) values(5,6);
+insert into books_subjects(book,subject) values(6,6);
+insert into books_subjects(book,subject) values(6,7);
+insert into books_subjects(book,subject) values(7,5);
+insert into books_subjects(book,subject) values(7,8);
+insert into books_subjects(book,subject) values(8,8);
+insert into books_subjects(book,subject) values(8,9);
 
 
