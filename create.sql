@@ -1,5 +1,5 @@
 create table publisher(
-     publisher_id integer primary key,
+     id integer primary key,
      name text,
      country text
 );
