@@ -6,28 +6,27 @@ create table publisher(
 
 
 create  table books(
-     book_id integer primary key,
+     id integer primary key,
      title text,
-     publisher_id integer not null,
-     foreign key (publisher_id)
-        references publisher(publisher_id)
+     foreign key (publisher)
+        references publisher(id)
 );
 
 
 create  table subjects(
-     subjects_id integer primary key,
+     id integer primary key,
      name text
 );
 
 
 
 create  table books_subjects(
-     book_id integer not null,
-     subjects_id integer not null,
-     foreign key(book_id)
-         references books(book_id),
-     foreign key(subjects_id)
-         references subjects(subjects_id)
+     book integer,
+     subject integer,
+     foreign key(book)
+         references books(id),
+     foreign key(subject)
+         references subjects(id)
 );
 
 
