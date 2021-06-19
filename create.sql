@@ -8,6 +8,7 @@ create table publisher(
 create  table books(
      id integer primary key,
      title text,
+     publisher integer,
      foreign key (publisher)
         references publisher(id)
 );
